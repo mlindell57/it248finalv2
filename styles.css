@@ -1,48 +1,94 @@
-/* Basic reset */
+/* styles.css - save this file in the same folder as index.html */
+
+/* Basic reset and sensible defaults */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Typography & layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f7f7f7;
-    color: #333;
-    padding: 20px;
+    color: #222;
+    background-color: #f4f6f8;
+    padding: 32px;
+}
+
+/* Container centers the content and restricts width */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Header */
-header {
+.site-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.site-header h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+    color: #0b2545;
 }
 
-/* Section Styling */
-section {
-    background: white;
-    padding: 20px;
-    margin-bottom: 25px;
+.lead {
+    color: #4b5563;
+    font-size: 1rem;
+}
+
+/* Card style for each section */
+.card {
+    background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(13, 30, 58, 0.06);
 }
 
-section h2 {
-    margin-bottom: 10px;
-    color: #222;
+.card h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.125rem;
+    color: #072146;
+}
+
+.card p {
+    margin: 0;
+    color: #1f2937;
 }
 
 /* Footer */
-footer {
+.site-footer {
     text-align: center;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #555;
+    margin-top: 28px;
+    color: #6b7280;
+}
+
+/* Accessibility: focus outlines for keyboard navigation */
+a:focus, button:focus, input:focus {
+    outline: 3px solid #8ab4ff;
+    outline-offset: 2px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 520px) {
+    body {
+        padding: 16px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .site-header h1 {
+        font-size: 22px;
+    }
 }
