@@ -1,87 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Information Architecture Priorities</title>
-
-    <!-- External stylesheet (must be saved as "styles.css" in the same folder) -->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Small inline fallback to ensure content is visible if external CSS fails to load -->
-    <style>
-      /* Minimal fallback so the page is not completely blank if styles.css can't be found. */
-      :root { --fallback-bg: #ffffff; --fallback-text: #111; }
-      body:empty::before {
-        content: "Loading..."; /* visible if body contains no nodes (diagnostic) */
-      }
-      /* Only apply the fallback if the external stylesheet doesn't override it */
-      .fallback-visible {
-        background: var(--fallback-bg);
-        color: var(--fallback-text);
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 20px;
-      }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Information Architecture Priorities</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body class="fallback-visible">
+<body>
+<div class="container">
+<h1>Security and Ethics in Information Architecture</h1>
+<p>
+Security and Ethics in IA is the most important because it protects customers from bad actors and safeguards a business’s reputation. As noted by NSG,
+“When customers interact with a business, they entrust their personal information, assets, and well-being.” Strong security practices help retain customer trust and encourage repeat engagement.
+</p>
 
-    <div class="container">
-        <header class="site-header">
-            <h1>Project Priorities Overview</h1>
-            <p class="lead">A summary of security, systems design, user experience, and information architecture considerations.</p>
-        </header>
 
-        <main>
-            <section id="security-ethics" class="card">
-                <h2>Security and Ethics in Information Architecture</h2>
-                <p>
-                    Security and Ethics in IA is the most important because it not only protects your customers from bad actors,
-                    but it protects your reputation as a business providing a service. An article from NSG states
-                    “When customers interact with a business, they entrust their personal information, assets, and well-being.”
-                    This highlights the importance of security to keep your customers coming back; if they feel like their security
-                    is not at risk, they will be more likely to return to your website.
-                </p>
-            </section>
+<h1>Systems Design, Engineering, and Organization</h1>
+<p>
+Systems Design ranks second because the way a system is designed affects the user’s mood and determines whether the system can scale effectively as the organization grows.
+</p>
 
-            <section id="systems-design" class="card">
-                <h2>Systems Design, Engineering, and Organization</h2>
-                <p>
-                    Systems Design is ranked second because the way a system is designed not only affects the user’s mood, but it is
-                    also important that the design can be scalable as the size of your organization grows.
-                </p>
-            </section>
 
-            <section id="ux-visual" class="card">
-                <h2>User Experience and Visual Design</h2>
-                <p>
-                    Having an appealing design works hand-in-hand with good digital-environment design. It improves the experience for
-                    users and entices them to utilize the environments that we are creating.
-                </p>
-            </section>
+<h1>User Experience and Visual Design</h1>
+<p>
+Appealing design works hand in hand with strong digital environment design. It enhances the user experience and encourages continued engagement with the environment.
+</p>
 
-            <section id="information-architecture" class="card">
-                <h2>Content and Information Architecture</h2>
-                <p>
-                    Efficient Information Architecture allows information to flow smoothly through the entire environment.
-                    If you have different ways to access environments, a solid Information Architecture will make transitions fluid.
-                    A well-made IA will encourage users to discover products they might not have initially sought.
-                </p>
-            </section>
-        </main>
 
-        <footer class="site-footer">
-            <p>Created for project documentation purposes.</p>
-        </footer>
-    </div>
-
-    <!-- Diagnostic helper: If you open the browser console and see this message, script ran -->
-    <script>
-      // Remove the "fallback-visible" class if the stylesheet rules have applied (visual test)
-      // This is only for diagnostic purposes; it won't break your layout.
-      window.addEventListener('load', function () {
-        document.body.classList.remove('fallback-visible');
-      });
-    </script>
+<h1>Content and Information Architecture</h1>
+<p>
+Efficient Information Architecture ensures information flows smoothly through the environment. For organizations with multiple access points or different digital environments, strong IA creates seamless transitions and supports product discovery beyond the user’s primary intent.
+</p>
+</div>
 </body>
 </html>
